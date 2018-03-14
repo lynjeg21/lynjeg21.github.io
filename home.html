@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+      <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="../species/species.html">Species</a>
+        <a href="../interesting_facts/interesting_facts.html">Interesting Facts</a>
+      </div>
+
+      <h1 id="heading">All About Bears</h1>
+      <p id="welcome">Welcome to All About Bears where you can learn all about bears! <br /> Browse through our various informative pages and also (most importantly) to see adorable bears!</p>
+
+      <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="http://discovermagazine.com/~/media/Images/Issues/2017/December/bears.jpg">
+        <img class="mySlides" src="https://pixel.nymag.com/imgs/daily/intelligencer/2017/08/23/23-bear-cubs-alaska.w710.h473.2x.jpg">
+        <img class="mySlides" src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/07/19/104596560-GettyImages-599203776.600x400.jpg?v=1507049402">
+      </div>
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*navigation bar*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #08C539;
+    overflow: hidden;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #16FF75;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #078528;
+    color: white;
+}
+/*logo*/
+#logo {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+  border-color: white;
+}
+/*home*/
+#heading {
+  font-family: 'Rammetto One', cursive;
+  text-align: center;
+  color: #029749;
+  font-size: 50px;
+  text-shadow: 5px 5px black;
+}
+#welcome {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+body{
+  background-color: #E6FFF2;
+}
+/*slideshow*/
+.mySlides {
+  width: 500px;
+  position: relative;
+  vertical-align: center;
+}
